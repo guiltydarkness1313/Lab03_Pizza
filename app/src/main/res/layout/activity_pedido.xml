@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shibuyaxpress.lab03_pizza.PedidoActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/title_pedido_activity"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/spinner_pizza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/name_pizzas" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/title_masa_activity"
+        android:textSize="20sp"/>
+
+    <RadioGroup
+        android:id="@+id/group_masa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rd_btn_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/subtitle_masa_1" />
+
+        <RadioButton
+            android:id="@+id/rd_btn_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/subtitle_masa_2" />
+
+        <RadioButton
+            android:id="@+id/rd_btn_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/subtitle_masa_3" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/title_complementos"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/check_queso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/subtitle_complementos_1" />
+
+    <CheckBox
+        android:id="@+id/check_jamon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/subtitle_complementos_2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/title_direccion"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/txt_direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_ordenar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_assignment"
+            android:text="@string/title_action"
+            android:onClick="ObtenerDatosCompra"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

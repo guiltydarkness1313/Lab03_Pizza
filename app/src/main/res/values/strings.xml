@@ -1,0 +1,24 @@
+<resources>
+    <string-array name="name_pizzas">
+        <item>Americana</item>
+        <item>Meat Lover</item>
+        <item>Hawaina</item>
+        <item>Super Suprema</item>
+    </string-array>
+
+    <string name="app_name">Lab03_Pizza</string>
+    <string name="title_action">Ordenar</string>
+    <string name="title_pedido_activity">Tipo de pizza</string>
+    <string name="title_masa_activity">Tipo de masa</string>
+    <string name="subtitle_masa_1">Masa gruesa</string>
+    <string name="subtitle_masa_2">Masa delgada</string>
+    <string name="subtitle_masa_3">Masa artesanal</string>
+    <string name="title_complementos">Complementos</string>
+    <string name="subtitle_complementos_1">Extra queso mozarella</string>
+    <string name="subtitle_complementos_2">Extra jamón</string>
+    <string name="title_direccion">Dirección de envio</string>
+    <string name="title_alert_pedido">Confirmación de pedido</string>
+
+
+
+</resources>
