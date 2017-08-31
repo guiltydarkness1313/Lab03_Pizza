@@ -43,7 +43,7 @@ public class Pizza {
         int aux=0;
         switch (nom){
             case "Americana":
-                aux=0;
+                //aux=0;
                 if(com.contains("extra queso")){
                     aux+=8;
                 }else{
@@ -58,7 +58,7 @@ public class Pizza {
                 e1.setPrecio(aux);
                 break;
             case "Hawaina":
-                aux=0;
+                //aux=0;
                 if(com.contains("extra queso")){
                     aux+=8;
                 }else{
@@ -73,7 +73,7 @@ public class Pizza {
                 e1.setPrecio(aux);
                 break;
             case "Super Suprema":
-                aux=0;
+                //aux=0;
                 if(com.contains("extra queso")){
                     aux+=8;
                 }else{
@@ -88,7 +88,7 @@ public class Pizza {
                 e1.setPrecio(aux);
                 break;
             case "Meat Lover":
-                aux=0;
+               // aux=0;
                 if(com.contains("extra queso")){
                     aux+=8;
                 }else{
