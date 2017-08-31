@@ -64,13 +64,11 @@ public class PedidoActivity extends AppCompatActivity {
             String[] complement = new String[2];
 
             if (boxqueso.isChecked()) {
-                complemento = boxqueso.getText().toString();
                 complement[0] = "extra queso";
             } else {
                 complement[0] = "";
             }
             if (boxjamon.isChecked()) {
-                complemento = boxjamon.getText().toString();
                 complement[1] = "extra jamon";
             } else {
                 complement[1] = "";
@@ -79,14 +77,15 @@ public class PedidoActivity extends AppCompatActivity {
 
             Pizza e1 = new Pizza();
             e1.setNombre(pizzaPedida);
-            e1.obtenerPrecio(e1);
             e1.setComplementos(complemento);
+            e1.obtenerPrecio(e1);
+
             RadioButton radio = (RadioButton) findViewById(grupoMasa.getCheckedRadioButtonId());
             //checkea si el radio button esta marcado
             if (grupoMasa.getCheckedRadioButtonId() == R.id.rd_btn_1) {
                 AlertDialog.Builder constructor = new AlertDialog.Builder(PedidoActivity.this);
                 constructor.setTitle("Confirmación de Pedido");
-                constructor.setMessage("Su pedido de " + pizzaPedida + " con " + (radio.getText()).toString().toLowerCase() + "a S/." + e1.getPrecio() + "+IGV esta en proceso de envio");
+                constructor.setMessage("Su pedido de " + pizzaPedida + " con " + (radio.getText()).toString().toLowerCase() + " a S/." + e1.getPrecio() + "+IGV esta en proceso de envio");
                 constructor.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -99,7 +98,7 @@ public class PedidoActivity extends AppCompatActivity {
             if (grupoMasa.getCheckedRadioButtonId() == R.id.rd_btn_2) {
                 AlertDialog.Builder constructor = new AlertDialog.Builder(PedidoActivity.this);
                 constructor.setTitle("Confirmación de Pedido");
-                constructor.setMessage("Su pedido de " + pizzaPedida + " con " + (radio.getText()).toString().toLowerCase() + "a S/." + e1.getPrecio() + "+IGV esta en proceso de envio");
+                constructor.setMessage("Su pedido de " + pizzaPedida + " con " + (radio.getText()).toString().toLowerCase() + " a S/." + e1.getPrecio() + "+IGV esta en proceso de envio");
                 constructor.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -113,7 +112,7 @@ public class PedidoActivity extends AppCompatActivity {
             if (grupoMasa.getCheckedRadioButtonId() == R.id.rd_btn_3) {
                 AlertDialog.Builder constructor = new AlertDialog.Builder(PedidoActivity.this);
                 constructor.setTitle("Confirmación de Pedido");
-                constructor.setMessage("Su pedido de " + pizzaPedida + " con " + (radio.getText()).toString().toLowerCase() + "a S/." + e1.getPrecio() + "+IGV esta en proceso de envio");
+                constructor.setMessage("Su pedido de " + pizzaPedida + " con " + (radio.getText()).toString().toLowerCase() + " a S/." + e1.getPrecio() + "+IGV esta en proceso de envio");
                 constructor.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {

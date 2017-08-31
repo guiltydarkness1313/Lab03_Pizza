@@ -39,18 +39,68 @@ public class Pizza {
 
     public void obtenerPrecio(Pizza e1){
         String nom=e1.getNombre();
+        String com=e1.getComplementos();
+        int aux=0;
         switch (nom){
             case "Americana":
-                e1.setPrecio(40);
+                aux=0;
+                if(com.contains("extra queso")){
+                    aux+=8;
+                }else{
+                    aux+=0;
+                }
+                if(com.contains("extra jamon")){
+                    aux+=12;
+                }else {
+                    aux+=0;
+                }
+                aux+=40;
+                e1.setPrecio(aux);
                 break;
             case "Hawaina":
-                e1.setPrecio(45);
+                aux=0;
+                if(com.contains("extra queso")){
+                    aux+=8;
+                }else{
+                    aux+=0;
+                }
+                if(com.contains("extra jamon")){
+                    aux+=12;
+                }else {
+                    aux+=0;
+                }
+                aux+=45;
+                e1.setPrecio(aux);
                 break;
             case "Super Suprema":
-                e1.setPrecio(65);
+                aux=0;
+                if(com.contains("extra queso")){
+                    aux+=8;
+                }else{
+                    aux+=0;
+                }
+                if(com.contains("extra jamon")){
+                    aux+=12;
+                }else {
+                    aux+=0;
+                }
+                aux+=65;
+                e1.setPrecio(aux);
                 break;
             case "Meat Lover":
-                e1.setPrecio(60);
+                aux=0;
+                if(com.contains("extra queso")){
+                    aux+=8;
+                }else{
+                    aux+=0;
+                }
+                if(com.contains("extra jamon")){
+                    aux+=12;
+                }else {
+                    aux+=0;
+                }
+                aux+=60;
+                e1.setPrecio(aux);
                 break;
         }
     }
